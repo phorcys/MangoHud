@@ -528,6 +528,9 @@ bool CPUStats::GetCpuFile() {
         } else if (name == "asusec") {
             find_input(path, "temp", input, "CPU");
             break;
+        } else if (name == "cpu_hwmon") {
+            find_input(path, "temp1", input, "CPU");
+          break;
         } else {
             path.clear();
         }
